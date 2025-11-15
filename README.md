@@ -4,7 +4,7 @@ FaceGate Security System
 Áttekintés
 ----------
 
-A FaceGate egy professzionális, többplatformos arcfelismerő biztonsági rendszer, amelyet hozzáférés-vezérlési alkalmazásokhoz fejlesztettek ki. A rendszer a hagyományos számítógépes látást ötvözi a mély tanulással és titkosított biometrikus tárolással, biztosítva ezzel a biztonságos arcos azonosítást.
+A FaceGate egy olyan program, ami arcfelismeréssel működő ajtó nyitó rendszer. A kamera felismeri az emberek arcát, és ha ismeri őket, kinyitja az ajtót. Ha nem ismeri, nem enged be.
 
 Főbb jellemzők
 --------------
