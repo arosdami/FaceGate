@@ -99,3 +99,10 @@ FaceGate/
 
 Ez a projekt a Tokaj-Hegyalja Egyetem Robotika, MI & NN kurzusán készült
 oktatási célra.
+
+Fejlesztő: Damjan Aros – THE PTI
+Projekt: Egyetemi projekt – FaceGate
+Egyetem: Tokaj-Hegyalja Egyetem
+Kurzus: Robotika, Mesterséges Intelligencia & Neurális Hálózatok
+Témavezetők: Attila Perlaki, Dávid Gegény
+Félév: 2025 Ősz
