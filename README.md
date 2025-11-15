@@ -66,7 +66,7 @@ numpy==1.24.3
 
 pyserial==3.5
 
-2\. Arduino beállítása
+###2\. Arduino beállítása
 
 Az Arduino Uno mikrovezérlőhöz töltsd fel a C\_UNLOCK.cpp fájlt. Ez a kód kezeli az ajtó nyitását/zárását a FaceGate rendszer parancsai alapján.
 
@@ -183,7 +183,9 @@ A FaceGate kettős felismerési architektúrát használ:
 *   **Minta minőségellenőrzés**: Automatikus minőségértékelés regisztráció közben
     
 
-FájlstruktúraFaceGate/
+### Fájlstruktúra
+
+FaceGate/
 
 ├── main.py # Fő program fájl
 
@@ -228,7 +230,7 @@ Parancsok:
 *   LOCK - Ajtó bezárása
     
 
-Hibaelhárítás
+### Hibaelhárítás
 
 ### Gyakori problémák
 
@@ -268,12 +270,12 @@ Fejlesztői információk
 
 **Fejlesztő**: Damjan Aros - THE PTI**Projekt**: Egyetemi Projekt - FaceGate**Egyetem**: Tokaj-Hegyalja Egyetem**Kurzus**: Robotika, Mesterséges Intelligencia & Neurális Hálózatok**Témavezetők**: Attila Perlaki, Dávid Gegény**Félév**: 2025 Ősz
 
-Licenc
+### Licenc
 ------
 
 Ez a projekt oktatási célokra készült a Tokaj-Hegyalja Egyetem Robotika, MI & NN kurzusán. A kód felhasználása csak oktatási és kutatási célokra engedélyezett.
 
-Támogatás
+### Támogatás
 ---------
 
 Problémák esetén ellenőrizd a rendszernaplókat és győződj meg arról, hogy minden függőség helyesen telepítve van. Hardveres problémák esetén ellenőrizd a kamera és Arduino csatlakozásokat.
