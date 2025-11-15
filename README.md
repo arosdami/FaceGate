@@ -216,7 +216,7 @@ FaceGate/
 
 └── README.mdArduino konfiguráció
 
-Csatlakozás
+### Csatlakozás
 
 Csatlakoztasd az Arduino Uno-t a számítógéphez USB-n keresztül
 
@@ -228,7 +228,7 @@ Kommunikációs protokoll
 
 Baud rate: 9600
 
-Parancsok:
+### Parancsok:
 
 *   UNLOCK - Ajtó kinyitása
     
