@@ -58,14 +58,14 @@ Telepítés
 
 Először telepítsd a Python 3.12.4 verziót, majd a szükséges könyvtárakat:
 
-*** pip install -r requirements.txt ***
+***pip install -r requirements.txt***
 
 A requirements.txt tartalma:
 
-opencv-python==4.8.1.78
-tensorflow==2.13.0
-numpy==1.24.3
-pyserial==3.5
+* opencv-python==4.8.1.78
+* tensorflow==2.13.0
+* numpy==1.24.3
+* pyserial==3.5
 
 ### 2\. Arduino beállítása
 
