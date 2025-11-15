@@ -58,7 +58,9 @@ Telepítés
 
 Először telepítsd a Python 3.12.4 verziót, majd a szükséges könyvtárakat:
 
-pip install -r requirements.txtA requirements.txt tartalma:opencv-python==4.8.1.78
+pip install -r requirements.txtA requirements.txt 
+
+tartalma:opencv-python==4.8.1.78
 
 tensorflow==2.13.0
 
@@ -66,7 +68,7 @@ numpy==1.24.3
 
 pyserial==3.5
 
-###2\. Arduino beállítása
+### 2\. Arduino beállítása
 
 Az Arduino Uno mikrovezérlőhöz töltsd fel a C\_UNLOCK.cpp fájlt. Ez a kód kezeli az ajtó nyitását/zárását a FaceGate rendszer parancsai alapján.
 
