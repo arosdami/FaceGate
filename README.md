@@ -268,7 +268,12 @@ A rendszer részletes naplókat generál a logs/ könyvtárban. A naplófájlo
 Fejlesztői információk
 ----------------------
 
-**Fejlesztő**: Damjan Aros - THE PTI**Projekt**: Egyetemi Projekt - FaceGate**Egyetem**: Tokaj-Hegyalja Egyetem**Kurzus**: Robotika, Mesterséges Intelligencia & Neurális Hálózatok**Témavezetők**: Attila Perlaki, Dávid Gegény**Félév**: 2025 Ősz
+**Fejlesztő**: Damjan Aros - THE PTI
+**Projekt**: Egyetemi Projekt - FaceGate
+**Egyetem**: Tokaj-Hegyalja Egyetem
+**Kurzus**: Robotika, Mesterséges Intelligencia & Neurális Hálózatok
+**Témavezetők**: Attila Perlaki, Dávid Gegény
+**Félév**: 2025 Ősz
 
 ### Licenc
 ------
