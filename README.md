@@ -58,17 +58,15 @@ Telepítés
 
 Először telepítsd a Python 3.12.4 verziót, majd a szükséges könyvtárakat:
 
-bash
+pip install -r requirements.txtA requirements.txt tartalma:opencv-python==4.8.1.78
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   pip install -r requirements.txt   `
+tensorflow==2.13.0
 
-A requirements.txt tartalma:
+numpy==1.24.3
 
-text
+pyserial==3.5
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   opencv-python==4.8.1.78  tensorflow==2.13.0  numpy==1.24.3  pyserial==3.5   `
-
-### 2\. Arduino beállítása
+2\. Arduino beállítása
 
 Az Arduino Uno mikrovezérlőhöz töltsd fel a C\_UNLOCK.cpp fájlt. Ez a kód kezeli az ajtó nyitását/zárását a FaceGate rendszer parancsai alapján.
 
@@ -85,14 +83,7 @@ Az Arduino kód főbb funkciói:
 
 ### 3\. Rendszer indítása
 
-A telepítés után indítsd el a rendszert:
-
-bash
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   python main.py   `
-
-Használat
----------
+A telepítés után indítsd el a rendszert:python main.pyHasználat
 
 ### Főmenü opciók
 
@@ -192,38 +183,52 @@ A FaceGate kettős felismerési architektúrát használ:
 *   **Minta minőségellenőrzés**: Automatikus minőségértékelés regisztráció közben
     
 
-Fájlstruktúra
--------------
+FájlstruktúraFaceGate/
 
-text
+├── main.py # Fő program fájl
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   FaceGate/  ├── main.py                 # Fő program fájl  ├── requirements.txt        # Python függőségek  ├── C_UNLOCK.cpp           # Arduino forráskód  ├── data/  │   ├── secure_facegate_database.pkl  │   ├── encryption_key.key  │   └── secure_faces/  ├── models/  │   └── secure_facegate_lbph_model.xml  ├── backups/  ├── logs/  └── README.md   `
+├── requirements.txt # Python függőségek
 
-Arduino konfiguráció
---------------------
+├── C\_UNLOCK.cpp # Arduino forráskód
 
-### Csatlakozás
+├── data/
 
-1.  Csatlakoztasd az Arduino Uno-t a számítógéphez USB-n keresztül
+│ ├── secure\_facegate\_database.pkl
+
+│ ├── encryption\_key.key
+
+│ └── secure\_faces/
+
+├── models/
+
+│ └── secure\_facegate\_lbph\_model.xml
+
+├── backups/
+
+├── logs/
+
+└── README.mdArduino konfiguráció
+
+Csatlakozás
+
+Csatlakoztasd az Arduino Uno-t a számítógéphez USB-n keresztül
+
+Töltsd fel a C\_UNLOCK.cpp fájlt az Arduino IDE segítségével
+
+A FaceGate rendszer automatikusan felismeri az Arduinót
+
+Kommunikációs protokoll
+
+Baud rate: 9600
+
+Parancsok:
+
+*   UNLOCK - Ajtó kinyitása
     
-2.  Töltsd fel a C\_UNLOCK.cpp fájlt az Arduino IDE segítségével
+*   LOCK - Ajtó bezárása
     
-3.  A FaceGate rendszer automatikusan felismeri az Arduinót
-    
-
-### Kommunikációs protokoll
-
-*   **Baud rate**: 9600
-    
-*   **Parancsok**:
-    
-    *   UNLOCK - Ajtó kinyitása
-        
-    *   LOCK - Ajtó bezárása
-        
 
 Hibaelhárítás
--------------
 
 ### Gyakori problémák
 
