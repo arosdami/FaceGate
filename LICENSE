@@ -1,21 +1,60 @@
-MIT License
+# LICENSE - FaceGate Security System
 
-Copyright (c) 2025 Damjan Aros
+## Magyar Licenc Szöveg
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+### Oktatási Kizárólagos Licenc
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+**Copyright (c) 2025 Damjan Aros**
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+Ezzel engedéllyel bármely személy, aki megkapja a szoftver másolatát és a hozzá tartozó dokumentációs fájlokat (a "Szoftver"), korlátozás nélkül használhatja a Szoftvert, beleértve a jogot a használatra, másolásra, módosításra, egyesítésre, közzétételre, terjesztésre, szolgáltatásra és/vagy értékesítésre a Szoftver másolatait, és lehetővé teszi azon személyek számára, akiknek a Szoftver rendelkezésre áll, hogy ezt megtegyék, a következő feltételek szerint:
+
+1. **Oktatási Cél**: A Szoftver kizárólag oktatási, kutatási és tanulási célokra használható.
+
+2. **Kereskedelmi Tilalom**: Tilos a Szoftver bármilyen kereskedelmi célú felhasználása, értékesítése, licencelése vagy bármilyen pénzügyi haszon szerzése.
+
+3. **Biztonsági Korlátozás**: A Szoftver nem használható kritikus biztonsági rendszerekben, életveszélyes helyzetekben vagy bármilyen olyan alkalmazásban, ahol meghibásodása sérülést, halált vagy jelentős anyagi károkat okozhat.
+
+4. **Szerzői Jelzés**: Minden Szoftver-másolatban vagy jelentős részében meg kell őrizni a fenti szerzői jogi értesítést és ezt az engedélyezési értesítést.
+
+5. **Jogi Nyilatkozat**: A Szoftver "jelen állapotában" kerül szolgáltatásra, mindenféle garancia nélkül, beleértve a forgalomhoz való alkalmasságra, egy adott célra való alkalmasságra és a jogi követelmények nem sértésére vonatkozó garanciákat. A szerzők vagy a szerzői jog tulajdonosai semmilyen esetben nem felelősek semmilyen igényért, kárért vagy egyéb felelősségért, amely a Szoftverből vagy a Szoftver használatából vagy a Szoftverrel való kapcsolatból ered.
+
+---
+
+## English License Text
+
+### Educational-Only License
+
+**Copyright (c) 2025 Damjan Aros**
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to use the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+1. **Educational Purpose**: The Software may only be used for educational, research, and learning purposes.
+
+2. **Commercial Prohibition**: Commercial use, sale, licensing, or any financial gain from the Software is strictly prohibited.
+
+3. **Safety Restriction**: The Software shall not be used in critical security systems, life-threatening situations, or any application where failure could result in injury, death, or significant material damage.
+
+4. **Attribution**: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+5. **Legal Disclaimer**: THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+---
+
+## Summary of Restrictions
+
+### What you CAN do:
+- Use for learning and education
+- Modify and study the code
+- Share with other students
+- Use in academic projects
+- Research and experimentation
+
+### What you CANNOT do:
+- Use in commercial products
+- Sell or license the software
+- Use in safety-critical systems
+- Claim as your own work
+- Remove copyright notices
+
+### Special Note for Universities:
+This software is developed as part of university coursework at Tokaj-Hegyalja University. It is intended for academic use and should not be deployed in production environments or real-world security systems.
