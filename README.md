@@ -1,4 +1,4 @@
-# FaceGate 1.1.0
+# FaceGate 1.1.5
 
 ## Áttekintés
 A FaceGate egy professzionális szintű biztonsági megoldás, amely a mesterséges intelligencia legkorszerűbb technikáit alkalmazva valósít meg teljes körű arcfelismeréses hozzáférés-vezérlést. A rendszer nem csupán egy egyszerű felismerő alkalmazás, hanem egy komplex, önállóan tanulni képes biztonsági infrastruktúra, amely a biometrikus azonosítás, valós idejű képfeldolgozás és fizikai access control zökkenőmentes integrációját valósítja meg.
