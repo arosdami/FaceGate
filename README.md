@@ -167,3 +167,6 @@ Egyetem: Tokaj-Hegyalja Egyetem
 Kurzus: Robotika, Mesterséges Intelligencia & Neurális Hálózatok  
 Témavezetők: Attila Perlaki, Dávid Gégény  
 Félév: 2025 Ősz
+
+<img width="639" height="510" alt="image" src="https://github.com/user-attachments/assets/07b02024-777f-43b4-9691-b0fa23740fcb" />
+
