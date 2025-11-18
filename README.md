@@ -1,7 +1,15 @@
 # FaceGate 1.1.0
 
 ## Áttekintés
-A FaceGate egy olyan biztonsági rendszer, amely neurális hálós arcfelismerést használ ajtók automatikus nyitására és zárására. A rendszer kameraképből azonosítja a személyeket, és ha felismeri őket, engedélyezi a belépést. Ismeretlen személy esetén azonnal megtagadja a hozzáférést.
+A FaceGate egy professzionális szintű biztonsági megoldás, amely a mesterséges intelligencia legkorszerűbb technikáit alkalmazva valósít meg teljes körű arcfelismeréses hozzáférés-vezérlést. A rendszer nem csupán egy egyszerű felismerő alkalmazás, hanem egy komplex, önállóan tanulni képes biztonsági infrastruktúra, amely a biometrikus azonosítás, valós idejű képfeldolgozás és fizikai access control zökkenőmentes integrációját valósítja meg.
+
+A FaceGate alapvető működési elve a többrétegű biztonsági architektúra, amely a legmodernebb konvolúciós neurális hálózatok (CNN) alkalmazásán keresztül biztosítja a megbízható személyazonosítást. A rendszer speciálisan tervezett neurális architektúrája lehetővé teszi nemcsak a statikus arcfelismerést, hanem a folyamatos tanulást és adaptációt is, ezzel garantálva a hosszú távú pontosságot és megbízhatóságot.
+
+A rendszer kiemelkedő technológiai jellemzője a valós idejű adaptív döntéshozatal, amely a hagyományos arcfelismerő rendszerek korlátait messze meghaladva, képes dinamikusan alkalmazkodni a változó környezeti feltételekhez (világítási viszonyok, kameraszögek, arckifejezések). Ez a képesség a speciálisan kiképzett neurális háló és a komplex előfeldolgozó algoritmusok szinergiáján alapul.
+
+A fizikai biztonsági integrációt egy intelligens Arduino-alapú aktuatórrendszer biztosítja, amely a szoftveres döntéseket valós idejű fizikai akciókká alakítja. Ez a megoldás lehetővé teszi nemcsak az ajtók automatikus vezérlését, hanem a rendszer állapotának folyamatos monitorozását és a biztonsági események részletes naplózását is.
+
+A rendszer egyedi tervezési eleme a proaktív biztonsági viselkedés, amely az ismeretlen arcok azonnali észlelését és a hozzáférés azonnali megtagadását eredményezi. Ez a funkcionalitás a hagyományos reakcióalapú rendszerekkel szemben preventív biztonsági megközelítést valósít meg, jelentősen növelve a védett területek biztonsági szintjét.
 
 ## Főbb jellemzők
 - CNN alapú arcfelismerés - Saját neurális háló pontos felismeréshez
