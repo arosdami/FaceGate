@@ -99,12 +99,15 @@ Az Arduino Uno mikrovezérlőre töltse fel a C_UNLOCK.cpp fájlt. Ez felel az a
 - Beallitasok - Rendszer konfigurálása
 - Kilepes - Program bezárása
 
-##Navigáció a menüben
+## Navigáció a menüben
 - W - Fel
 - S - Le
 - ENTER - Kiválasztás
 - ESC - Vissza/Kilépés
 - M - Főmenü
+
+<img width="627" height="480" alt="image" src="https://github.com/user-attachments/assets/04597f68-2ea3-4f51-bbc0-d13550dafa67" />
+
 
 ## Arc regisztrálás
 - Automata minta gyűjtés - 15 kép automatikus rögzítése
