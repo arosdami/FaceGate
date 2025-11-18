@@ -1,5 +1,8 @@
 # FaceGate 1.1.5
 
+
+![1118(1)](https://github.com/user-attachments/assets/9face1b4-724f-4a78-9ab0-20580808807c)
+
 ## Áttekintés
 A FaceGate egy professzionális szintű biztonsági megoldás, amely a mesterséges intelligencia legkorszerűbb technikáit alkalmazva valósít meg teljes körű arcfelismeréses hozzáférés-vezérlést. A rendszer nem csupán egy egyszerű felismerő alkalmazás, hanem egy komplex, önállóan tanulni képes biztonsági infrastruktúra, amely a biometrikus azonosítás, valós idejű képfeldolgozás és fizikai access control zökkenőmentes integrációját valósítja meg.
 
