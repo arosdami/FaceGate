@@ -1,16 +1,16 @@
 # FaceGate 1.1.0
 
 ## Áttekintés
-A FaceGate egy olyan biztonsági rendszer, amely arcfelismerést használ ajtók automatikus nyitására és zárására. A rendszer kameraképből azonosítja a személyeket, és ha felismeri őket, engedélyezi a belépést. Ismeretlen személy esetén megtagadja a hozzáférést.
+A FaceGate egy olyan biztonsági rendszer, amely neurális hálós arcfelismerést használ ajtók automatikus nyitására és zárására. A rendszer kameraképből azonosítja a személyeket, és ha felismeri őket, engedélyezi a belépést. Ismeretlen személy esetén azonnal megtagadja a hozzáférést.
 
 ## Főbb jellemzők
-- CNN alapú arcfelismerés — Mély neurális hálózat pontos felismeréshez
-- Automatikus tanulás — A rendszer képes új arcok tanulására és adaptálására
-- Valós idejű feldolgozás — Arcfelismerés élő kamera képen
+- CNN alapú arcfelismerés - Saját neurális háló pontos felismeréshez
+- Automatikus tanulás - A rendszer képes új arcok tanulására folyamatosan
+- Valós idejű feldolgozás - Arc felismerés élő kamera képen
 - Arduino integráció — Fizikai ajtóvezérlés támogatása
-- Minőségellenőrzés — Automatikus arcminőség értékelés adatgyűjtéskor
-- Kettős adatbázis — Jóváhagyott és tiltott személyek külön kezelése
-- Automatikus adatgyűjtés — Intelligens minta rögzítés kézi beavatkozás nélkül
+- Intelligens biztonság - Ismeretlen arc azonnali észlelése
+- Időzített nyitás - 10 másodperc nyitva tartás ismert arcoknak
+- Menu rendszer - Teljes grafikus kezelőfelület
 
 ## Rendszerkövetelmények
 
@@ -38,14 +38,45 @@ A szükséges csomagok telepítése:
 
 **requirements.txt tartalma:**
 
-    opencv-python==4.8.1.78
-    tensorflow==2.13.0
-    numpy==1.24.3
-    pyserial==3.5
-    scikit-learn==1.3.0
+    torch>=1.9.0
+    torchvision>=0.10.0
+    opencv-python>=4.5.0
+    numpy>=1.21.0
+    scikit-learn>=1.0.0
+    scikit-image>=0.19.0
+    Pillow>=9.0.0
+    pyserial>=3.5
+    facenet-pytorch>=2.5.0
 
 ### 2. Arduino beállítása
 Az Arduino Uno mikrovezérlőre töltse fel a C_UNLOCK.cpp fájlt. Ez felel az ajtó vezérléséért.
+
+    #include <Servo.h>
+    Servo lockServo;
+    const int SERVO_PIN = 3;
+    
+    void setup() {
+      lockServo.attach(SERVO_PIN);
+      Serial.begin(9600);
+      lockServo.write(90);
+      Serial.println("UNO READY - D3 SERVO");
+    }
+    
+    void loop() {
+      if (Serial.available() > 0) {
+        String cmd = Serial.readStringUntil('\n');
+        cmd.trim();
+        
+        if (cmd == "UNLOCK") {
+          lockServo.write(0);
+          Serial.println("NYITVA");
+        }
+        else if (cmd == "LOCK") {
+          lockServo.write(90);
+          Serial.println("ZARVA");
+        }
+      }
+    }
 
 ### 3. A rendszer indítása
 
@@ -54,27 +85,24 @@ Az Arduino Uno mikrovezérlőre töltse fel a C_UNLOCK.cpp fájlt. Ez felel az a
 ## Használat
 
 ### Főmenü opciók
-- Aktiválás — Biztonsági rendszer indítása
-- Lista — Arcok kezelése
-  - Engedélyezett hozzáadása
-  - Tiltott hozzáadása
-  - CNN tanulási státusz
-  - Személyek listázása
-  - CNN modell újratanítása
-- Beállítások — Rendszer konfigurálása
-  - Kamera port beállítása
-  - Arduino port beállítása
-  - Rendszer beállítások
-- Státusz megjelenítése
-- About információ
-- Kilépés
+- Arc Felismeres Inditasa - Biztonsági rendszer aktiválása
+- Uj Arc Tanulasa - Új személy hozzáadása a rendszerhez
+- Ismert Arcok - Regisztrált arcok kezelése
+- Beallitasok - Rendszer konfigurálása
+- Kilepes - Program bezárása
+
+##Navigáció a menüben
+- W - Fel
+- S - Le
+- ENTER - Kiválasztás
+- ESC - Vissza/Kilépés
+- M - Főmenü
 
 ## Arc regisztrálás
-- Automatikus adatgyűjtés jó minőségű arc képekkel
-- Minimum 15 minta szükséges
-- Valós idejű minőségellenőrzés (fényesség, kontraszt, szemek)
-- Automatikus CNN modell frissítés új arcok után
-
+- Automata minta gyűjtés - 15 kép automatikus rögzítése
+- Valós idejű minőségellenőrzés - Arc pozíció és minőség ellenőrzése
+- Neurális háló tanítás - Automatikus modell frissítés új arcok után
+  
 ## Biztonsági mód
 A rendszer:
 - Valós időben figyeli a kamerát
@@ -82,9 +110,10 @@ A rendszer:
 - Vezérli az Arduino ajtózárát
 - Automatikus zárást végez beállított idő után
 - Részletes naplózást készít a felismerésekről
+- Több arc egyidejű kezelése és felismerése
 
 ## Rendszer beállítások
-- Biztonsági küszöb: 0.1–1.0 (alapértelmezett: 0.85)
+- Biztonsági küszöb: 0.1–1.0 (alapértelmezett: 0.95)
 - Nyitva tartás ideje: 1–60 mp (alapértelmezett: 8)
 - Maximum minták: 15–200 (alapértelmezett: 50)
 - Tanítási epochok: 10–100 (alapértelmezett: 30)
@@ -95,20 +124,14 @@ A rendszer:
 
     FaceGate/
     ├── main.py
+    ├── config.py
+    ├── neural_face_recognizer.py
+    ├── arduino_controller.py
+    ├── menu_system.py
     ├── requirements.txt
-    ├── Dokumentacio
-    ├── Arduino/
-    ├── data/
-    │   ├── jovahagyott/
-    │   ├── tiltott/
-    │   ├── jovahagyott_adatbazis.pkl
-    │   ├── osztaly_kodolas.pkl
-    │   └── tiltott_adatbazis.pkl
-    ├── models/
-    │   └── arc_felismero_model.h5
-    ├── training_data
-    ├── LICENSE
-    └── README.md
+    ├── face_model.pth
+    ├── known_faces.pkl
+    └── system_config.json
 
 ## CNN Architektúra
 A rendszer 4 konvolúciós réteget használ:
@@ -116,10 +139,16 @@ A rendszer 4 konvolúciós réteget használ:
 1. Konvolúciós blokk — 32 szűrő, BatchNormalization, MaxPooling, Dropout
 2. Konvolúciós blokk — 64 szűrő, BatchNormalization, MaxPooling, Dropout
 3. Konvolúciós blokk — 128 szűrő, BatchNormalization, MaxPooling, Dropout
-4. Konvolúciós blokk — 256 szűrő, BatchNormalization, MaxPooling, Dropout
 
 Teljesen összekapcsolt rétegek: 512 és 256 neuron + Dropout  
 Kimeneti réteg: Softmax aktiváció
+
+##Működési elv
+- Arc detektálás - Haar cascade algoritmus
+- Feature extraction - CNN neurális háló arc jellemzők kinyerésére
+- Hasonlóság számítás - Koszinusz hasonlóság ismert arcokkal
+- Döntés - Küszöbérték alapú azonosítás
+- Vezérlés - Arduino parancsok küldése
 
 ## Licenc
 Ez a projekt a Tokaj-Hegyalja Egyetem Robotika, MI & NN kurzusán készült oktatási célra.
