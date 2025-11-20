@@ -3,6 +3,8 @@
 
 ![1118(1)](https://github.com/user-attachments/assets/9face1b4-724f-4a78-9ab0-20580808807c)
 
+
+
 ## Áttekintés
 A FaceGate egy professzionális szintű biztonsági megoldás, amely a mesterséges intelligencia legkorszerűbb technikáit alkalmazva valósít meg teljes körű arcfelismeréses hozzáférés-vezérlést. A rendszer nem csupán egy egyszerű felismerő alkalmazás, hanem egy komplex, önállóan tanulni képes biztonsági infrastruktúra, amely a biometrikus azonosítás, valós idejű képfeldolgozás és fizikai access control zökkenőmentes integrációját valósítja meg.
 
@@ -13,6 +15,9 @@ A rendszer kiemelkedő technológiai jellemzője a valós idejű adaptív dönt�
 A fizikai biztonsági integrációt egy intelligens Arduino-alapú aktuatórrendszer biztosítja, amely a szoftveres döntéseket valós idejű fizikai akciókká alakítja. Ez a megoldás lehetővé teszi nemcsak az ajtók automatikus vezérlését, hanem a rendszer állapotának folyamatos monitorozását és a biztonsági események részletes naplózását is.
 
 A rendszer egyedi tervezési eleme a proaktív biztonsági viselkedés, amely az ismeretlen arcok azonnali észlelését és a hozzáférés azonnali megtagadását eredményezi. Ez a funkcionalitás a hagyományos reakcióalapú rendszerekkel szemben preventív biztonsági megközelítést valósít meg, jelentősen növelve a védett területek biztonsági szintjét.
+
+<img width="1024" height="1024" alt="Gemini_Generated_Image_d3wjeyd3wjeyd3wj" src="https://github.com/user-attachments/assets/c3cbeea2-7fb2-4de9-9ee3-ba1b49c57984" />
+
 
 ## Főbb jellemzők
 - CNN alapú arcfelismerés - Saját neurális háló pontos felismeréshez
